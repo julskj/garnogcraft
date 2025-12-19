@@ -30,6 +30,153 @@ h2, h3, h4, p{
   font-style: normal;
 }
 
+/* ------------------------------------- MOBIL og TABLET ---------------------------------------- */
+
+@media screen and (max-width: 768px){
+
+header nav{
+    background-color: #D5ACAD;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 4em;
+    width: auto;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li{
+    padding: 0.5em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #40312E;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #6C7E95;
+}
+
+/*------------Nyheder------------*/
+
+.Nyheder{
+    padding: 0.5em 0;
+}
+
+.scroll{
+    overflow-x: scroll;
+    width: 100%;
+    display: flex;
+    gap: 0.5em;
+}
+
+.scroll img{
+    width: 90vw;
+    height: auto;
+}
+
+/*------------Kategori------------*/
+
+.Kategori h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.2em;
+}
+
+.kat{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 1em;
+}
+
+.kat img{
+    width: 100%;
+}
+
+.kat1, .kat2{          /*----- Burde kun blive vist på mobilen?? -----*/
+    display: flex;
+    flex-direction: row;  
+    gap: 10px;
+}
+
+.kat a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #40312E;
+    font-size: 1em;
+}
+
+.kat a:hover{
+    text-decoration: none;
+    color: #6C7E95;
+}
+
+/*-------------Butik--------------*/
+
+
+/*--------------Garn--------------*/
+
+
+/*--------------Solgt-------------*/
+
+
+/*------------Stjerner------------*/
+
+
+/*--------------Kits--------------*/
+
+
+/*-----------Opskrifter-----------*/
+
+
+/*-------------Footer-------------*/
+
+footer{
+    background-color: #D5ACAD;
+    padding: 1em 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+    text-decoration: none;
+    color: #40312E;
+    font-size: 1rem;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #6C7E95;
+}
+
+.info, .klub, .om, .følg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.følg{
+    gap: 5px;
+}
+
+}
+
+/* ----------------------------------------- DESKTOP -------------------------------------------- */
+
+@media screen and (min-width: 769px){
+
 /*------------Header------------*/
 
 header nav{
@@ -94,6 +241,7 @@ nav ul li a:hover{
 .kat{
     display: flex;
     justify-content: space-around;
+    padding: 0em 2em;
 }
 
 .kat img{
@@ -133,8 +281,34 @@ nav ul li a:hover{
 
 /*-------------Footer-------------*/
 
+footer{
+    background-color: #D5ACAD;
+    padding: 1em 3em;
+    display: flex;
+    justify-content: space-between;
+}
 
+footer a{
+    text-decoration: none;
+    color: #40312E;
+    font-size: 1rem;
+}
 
+footer a:hover{
+    text-decoration: none;
+    color: #6C7E95;
+}
+
+.info, .klub, .om, .følg{
+    display: flex;
+    flex-direction: column;
+}
+
+.følg{
+    gap: 5px;
+}
+
+}
 
 
 

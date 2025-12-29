@@ -3,134 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garn og Craft</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Garn og Craft - Din hjemmeside for garn og håndarbejde</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c6c1350638.js" crossorigin="anonymous"></script>
-    <script src="js/navigation.js" defer></script>
 </head>
 <body>
+    
+    <!-- ==================== HEADER ==================== -->
     <header>
-        <nav>
-            <a href="index.html"><img class="logo" src="img/logo (MED baggrund).png" alt="logo"></a>
+        <nav aria-label="Hovednavigation">
+            <a href="index.html" aria-label="Gå til forsiden">
+                <img class="logo" src="img/GARN.png" alt="Garn og Craft logo">
+            </a>
             <ul>
-                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                <li><a href="#" aria-label="Søg på siden"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></li>
+                <li><a href="#" aria-label="Min konto"><i class="fa-solid fa-user" aria-hidden="true"></i></a></li>
+                <li><a href="#" aria-label="Indkøbskurv"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a></li>
+                <li><a href="#" aria-label="Kontakt os"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+                <li><a href="#" aria-label="Åbn menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="Nyheder">
+    <!-- ==================== NYHEDER / HERO BANNER ==================== -->
+    <section class="Nyheder" aria-label="Kampagner og nyheder">
         <div class="scroll">
-            <div>
-                <img src="img/nyheder1.png" alt="Nyheder1">
+            <div class="hero-item">
+                <img src="img/nyheder1.png" alt="Julekampagne">
+                <div class="hero-text">
+                    <p> Julen nærmer sig, og vi har pyntet fint op i hele Kolding. Hos Craft og Gran holder vi forskellige kreativ jule-workshop i løbet af december. Her kan du blandt andet lære at strikke, hækle og meget mere.</p>
+                    <a href="#" class="btn-primary" aria-label="Lær mere om vores julekampagne">Læs mere her</a>
+                </div>
             </div>
 
-            <div>
-                <img src="img/nyheder2.png" alt="Nyheder2">
+            <div class="hero-item">
+                <img src="img/nyheder2.png" alt="Nyheder kampagne 2">
             </div>
 
-            <div>
-                <img src="img/nyheder3.png" alt="Nyheder3">
+            <div class="hero-item">
+                <img src="img/nyheder3.png" alt="Nyheder kampagne 3">
             </div>
         </div>
     </section>
 
-    <section class="Kategori">
-        <h2>Shop efter kategori</h2>
+    <!-- ==================== KATEGORI ==================== -->
+    <section class="Kategori" aria-label="Shop efter kategori">
+        <h2>SHOP EFTER KATEGORI</h2>
 
         <div class="kat">
             <div class="kat1">
-                <div>
-                    <img src="img/garn-kat.png" alt="Garn">
-                    <a href="#">Garn</a>
+                <div class="kat-item">
+                    <a href="#" aria-label="Se vores udvalg af garn">
+                        <img src="img/Skærmbillede 2025-12-01 kl. 10.21.58.png" alt="Forskellige farver af garn">
+                        <p>Garn</p>
+                    </a>
                 </div>
-
-                <div>
-                    <img src="img/tilbehør.png" alt="Tilbehør">
-                    <a href="#">Tilbehør</a>
+                <div class="kat-item">
+                    <a href="#" aria-label="Se vores tilbehør til alt i craft">
+                        <img src="img/Skærmbillede 2025-12-01 kl. 10.22.53.png" alt="crafttilbehør">
+                        <p>Tilbehør</p>
+                    </a>
                 </div>
             </div>
 
             <div class="kat2">
-                <div>
-                    <img src="img/kurser.png" alt="Kurser">
-                    <a href="#">Kurser</a>
+                <div class="kat-item">
+                    <a href="#" aria-label="Se vores kurser i håndarbejde">
+                        <img src="img/Skærmbillede 2025-12-01 kl. 10.23.04.png" alt="Håndarbejdskurser">
+                        <p>Kurser</p>
+                    </a>
                 </div>
-
-                <div>
-                    <img src="img/opskrifter.png" alt="Opskrifter">
-                    <a href="#">Opskrifter</a>
+                <div class="kat-item">
+                    <a href="#" aria-label="Find opskrifter på håndarbejdsprojekter">
+                        <img src="img/Garn logo-kopi.png" alt="Strikkeopskrifter">
+                        <p>Opskrifter</p>
+                    </a>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <section class="Butik">
-
+    <!-- ==================== BUTIK (ÅBNINGSTIDER + BILLEDE) ==================== -->
+    <section class="Butik" aria-label="Om vores butik">
+        <div class="butik-container">
+            <div class="butik-info">
+                <h3>Besøg vores fysiske butik i Kolding</h3>
+                <ul>
+                    <li>Mandag - Fredag: 10:00 - 18:00</li>
+                    <li>Lørdag: 10:00 - 16:00</li>
+                    <li>Søndag: Stengt</li>
+                    <li class="spacing-top">Julaften & Nyttårsaften: Lukket</li>
+                    <li>1. & 2. juledag: Lukket</li>
+                    <li>Nyttårsdag: Lukket</li>
+                </ul>
+                <p class="italic">Ændringer kan forekomme.</p>
+            </div>
+            
+            <div class="butik-billede">
+                <img src="img/Skærmbillede 2025-12-01 kl. 10.23.33.png" alt="Vores hyggelige butik med garn og håndarbejdsmaterialer">
+            </div>
+        </div>
     </section>
 
-    <section class="Garn">
-
+    <!-- ==================== SOLGT / MEST SØGTE KATEGORIER ==================== -->
+    <section class="Solgt" aria-label="Mest søgte kategorier">
+        <h2>SOLGT MEST AT</h2>
+        <div class="cirkel-container">
+            <div class="cirkel cirkel-1">
+                <img src="img/Skærmbillede_2025-12-01_kl._10.24.12-removebg-preview.png" alt="Populær kategori 1">
+            </div>
+            <div class="cirkel cirkel-2">
+                <img src="img/Skærmbillede_2025-12-01_kl._10.24.48-removebg-preview.png" alt="Populær kategori 2">
+            </div>
+            <div class="cirkel cirkel-3">
+                <img src="img/Skærmbillede_2025-12-01_kl._10.24.54-removebg-preview.png" alt="Populær kategori 3">
+            </div>
+            <div class="cirkel cirkel-4">
+                <img src="img/Skærmbillede_2025-12-01_kl._10.25.01-removebg-preview.png" alt="Populær kategori 4">
+            </div>
+            <div class="cirkel cirkel-5">
+                <img src="img/Skærmbillede 2025-12-01 kl. 10.25.07.png" alt="Populær kategori 5">
+            </div>
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        </div>
     </section>
 
-    <section class="Solgt">
-
+    <!-- ==================== GARN PRODUKTER ==================== -->
+    <section class="Garn" aria-label="Vores garnudvalg">
+        <div class="produkt-grid">
+            <article class="produkt">
+                <img src="img/Skærmbillede 2025-12-01 kl. 10.28.30.png" alt="Rød garnkule">
+                <p>Rød garnnøgle 50kr</p>
+                <button aria-label="Læg rød garnnøgle i kurven">Læg i kurv</button>
+            </article>
+            <article class="produkt">
+                <img src="img/Skærmbillede 2025-12-01 kl. 10.29.43.png" alt="Grå garnkule">
+                <p>Grå garnnøgle 50kr</p>
+                <button aria-label="Læg grå garnnøgle i kurven">Læg i kurv</button>
+            </article>
+            <article class="produkt">
+                <img src="img/Skærmbillede 2025-12-01 kl. 10.31.27.png" alt="Blå garnkule">
+                <p>Blå garnnøgle 50kr</p>
+                <button aria-label="Læg blå garnnøgle i kurven">Læg i kurv</button>
+            </article>
+            <article class="produkt">
+                <img src="img/Skærmbillede 2025-12-01 kl. 10.32.30.png" alt="Brun garnkule">
+                <p>Brun garnnøgle 50kr</p>
+                <button aria-label="Læg brun garnnøgle i kurven">Læg i kurv</button>
+            </article>
+        </div>
     </section>
 
-    <section class="Stjerner">
-
+    <!-- ==================== STJERNER / KUNDEANMELDELSE ==================== -->
+    <section class="Stjerner" aria-label="Kundeanmeldelser">
+        <div class="anmeldelse">
+            <div class="stjerne-rating" role="img" aria-label="5 ud af 5 stjerner">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <!-- KUNDE ANMELDELSE -->
+            <blockquote>
+                <p>"Garn & Crafts er en lille, hyggelig butik med et imponerende udvalg af garn og andet crafttilbehør. Enten du er en erfaren strikker eller bare vil prøve noget nyt, så finder du alt du behøver her. Ejeren er den sødeste dame og altid villig til at hjælpe. Jeg har også været rigtig glad for deres opskriftbog og workshop aftener."</p>
+                <cite>- AMALIE M.</cite>
+            </blockquote>
+        </div>
     </section>
 
-    <section class="Kits">
-
+    <!-- ==================== KITS / GAVEPAKKER ==================== -->
+    <section class="Kits" aria-label="Kit og garnpakker">
+        <h2>Kit og garnpakker</h2>
+        <div class="produkt-grid">
+            <article class="produkt">
+                <img src="img/kits1.png" alt="Garnpakke 1">
+                <button aria-label="Læs mere">Læs mere</button>
+            </article>
+            <article class="produkt">
+                <img src="img/kits2.png" alt="Garnpakke 2">
+                <button aria-label="Læs mere">Læs mere</button>
+            </article>
+            <article class="produkt">
+                <img src="img/kits3.png" alt="Garnpakke 3">
+                <button aria-label="Læs mere">Læs mere</button>
+            </article>
+            <article class="produkt">
+                <img src="img/kits4.png" alt="Garnpakke 4">
+                <button aria-label="Læs mere">Læs mere</button>
+            </article>
+        </div>
     </section>
 
-    <section class="Opskrifter">
+    <!-- ==================== OPSKRIFTER ==================== -->
+    <section class="Opskrifter" aria-label="Strikkeopskrifter">
+        <h2>OPSKRIFTER</h2>
+        
+        <!-- MANGLER BILLEDER-->
+        <div class="produkt-grid">
+            <article class="produkt">
+                <img src="img/små julerester.png" alt="Opskrift på juletræer">
+                <p>Små juletræer</p>
+            </article>
+            <article class="produkt">
+                <img src="img/juletræ.png" alt="Opskrift på juletræ">
+                <p>Juletræ</p>
+            </article>
+            <article class="produkt">
+                <img src="img/Skærmbillede 2025-12-01 kl. 10.25.38.png" alt="hue opskrift">
+                <p>Hue</p>
+            </article>
+            <article class="produkt">
+                <img src="img/hårelastikker.png" alt="Opskrift på hårelastikker">
+                <p>hårelastikker</p>
+            </article>
+        </div>
 
+        <!-- Anden række opskrifter -->
+        <div class="produkt-grid">
+            <article class="produkt">
+                <img src="img/svampe.png" alt="Opskrift på svampe">
+                <p>Svampe</p>
+            </article>
+            <article class="produkt">
+                <img src="img/slyngrosehue.png" alt="Opskrift på slyngrosehue">
+                <p>Slyngrosehue</p>
+            </article>
+            <article class="produkt">
+                <img src="img/Skærmbillede 2025-12-01 kl. 10.25.50.png" alt="Fremstrikk">
+                <p>Fremstrikk</p>
+            </article>
+            <article class="produkt">
+                <img src="img/sophies hue.png" alt="Opskrift på sofies hue">
+                <p>Sofies hue</p>
+            </article>
+        </div>
     </section>
 
+    <!-- ==================== FOOTER ==================== -->
     <footer>
-
         <div class="info">
-            <h2>Information</h2>
-            <a href="#">Kontakt</a>
-            <a href="#">Nyheder</a>
-            <a href="#">Events</a>
-            <a href="#">Handelsbetingelser</a>
+            <h3>Information</h3>
+            <nav aria-label="Information links">
+                <a href="#">Kontakt</a>
+                <a href="#">Nyheder</a>
+                <a href="#">Events</a>
+                <a href="#">Handelsbetingelser</a>
+            </nav>
         </div>
 
         <div class="klub">
-            <h2>Kundeklub</h2>
-            <a href="#">Opret konto/log in</a>
-            <a href="#">Ønskelister</a>
-            <a href="#">Mine ordre</a>
-            <a href="#">Mine oplysninger</a>
-            <a href="#">Medlemsfordele</a>
+            <h3>Kundeklub</h3>
+            <nav aria-label="Kundeklub links">
+                <a href="#">Opret konto/log in</a>
+                <a href="#">Ønskelister</a>
+                <a href="#">Mine ordre</a>
+                <a href="#">Mine oplysninger</a>
+                <a href="#">Medlemsfordele</a>
+            </nav>
         </div>
 
-          <div class="om">
-            <h2>Om os</h2>
-            <a href="#">Butikken</a>
-            <a href="#">Bæredygtighed</a>
-            <a href="#">Ledige stillinger</a>
-            <a href="#">Spørgsmål & svar</a>
+        <div class="om">
+            <h3>Om os</h3>
+            <nav aria-label="Om os links">
+                <a href="#">Butikken</a>
+                <a href="#">Bæredygtighed</a>
+                <a href="#">Ledige stillinger</a>
+                <a href="#">Spørgsmål & svar</a>
+            </nav>
         </div>
 
-          <div class="følg">
-            <h2>Følg os</h2>
-            <a href="#"><i class="fa-brands fa-facebook"></i> @Garnogcraft</a>
-            <a href="#"><i class="fa-brands fa-instagram"></i> @Garnogcraft</a>
-            <a href="#"><i class="fa-brands fa-tiktok"></i> @Garnogcraft</a>
-            <a href="#"><i class="fa-brands fa-pinterest"></i> @Garnogcraft</a>
+        <div class="følg">
+            <h3>Følg os</h3>
+            <nav aria-label="Sociale medier links">
+                <a href="#" aria-label="Følg os på Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i> @Garnogcraft</a>
+                <a href="#" aria-label="Følg os på Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> @Garnogcraft</a>
+                <a href="#" aria-label="Følg os på TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i> @Garnogcraft</a>
+                <a href="#" aria-label="Følg os på Pinterest"><i class="fa-brands fa-pinterest" aria-hidden="true"></i> @Garnogcraft</a>
+            </nav>
         </div>
-
     </footer>
     
 </body>
